@@ -1,0 +1,117 @@
+html {
+  background: url(/images/background.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*Logo City Pop*/
+#link-imagem {
+  display: flex;
+  height: 180px;
+  width: 600px;
+  margin: 210px auto 70px;
+}
+
+#link-imagem img {
+  margin: 0 auto;
+}
+
+/*'Listen!' button*/
+.button-container-div {
+  display: flex;
+  height: 100px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button {
+  margin: 0 auto;
+  padding: 0 5px;
+  width: 40%;
+  height: 75px;
+  border: 1px solid #ff8899;
+  background: #fc8694;
+  border-radius: 999px;
+  box-shadow: 0 10px 20px -10px #5e5df0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: none;
+}
+
+#button:hover {
+  background: rgb(203, 77, 119);
+  transition: .7s;
+}
+
+span{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+
+/*Artist Name*/
+#name {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 7%;
+  font-size: 25px;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+#rightbox {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 15%;
+  margin-bottom: 20px;
+  /*margin-left: 80%;*/
+
+  text-align: right;
+  font-size: 30px;
+}
+
+/*right box buttons pattern*/
+
+#volumeMinus,
+#volumePlus,
+#pause{
+  height: 60px;
+  margin-top: 21%;
+  background: #c4526c;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  display: inline !important;
+  outline: 0 solid transparent;
+}
+
+/*Minor differences*/
+#volumeMinus,
+#volumePlus{
+  width: 22%;
+  font-size: 35px;
+}
+#pause{
+  margin-right: 8%;
+  width: 32%;
+  font-size: 20px;
+}
+
+#volumeMinus:hover,
+#volumePlus:hover,
+#pause:hover {
+  background: #cc3659;
+  transition: .7s;
+}

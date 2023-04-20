@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="/src/songs.css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/cherry.png" type="image/x-icon">
+      <title>Songs List!</title>
+   </head>
+   <body>
+
+      <section class="layout">
+         <div class="header">
+            <a href="index.html" id="link-imagem">
+               <img src="images/songs.gif" alt="City" title="Clique para voltar a página principal">
+             </a>
+         </div>
+         <div class="leftSide"></div>
+         <div class="PinkCenter">
+            <div id="cards-container"></div>
+         </div>
+         <div class="rightSide"></div>
+         <div class="footer"></div> 
+       </section>
+
+
+   <script type="module" src="/src/matriz.js"></script>
+    <script type="module">
+import { audioTracks } from '/src/matriz.js';
+
+const cardsContainer = document.getElementById('cards-container');
+
+for (let i = 0; i < audioTracks.length; i++) {
+  const audioTrack = audioTracks[i];
+
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  const title = document.createElement('h2');
+  title.textContent = audioTrack.name;
+  card.appendChild(title);
+
+  const artist = document.createElement('p');
+  artist.textContent = audioTrack.artist;
+  card.appendChild(artist);
+
+  const audio = document.createElement('audio');
+  audio.controls = true;
+  const source = document.createElement('source');
+  source.src = audioTrack.file;
+  audio.appendChild(source);
+  card.appendChild(audio);
+
+  cardsContainer.appendChild(card);
+}
+    </script>
+   </body>
+</html>

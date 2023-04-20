@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="/src/style.css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/cherry.png" type="image/x-icon">
+      <title>City Pop!</title>
+      <script type="module">
+         import * as myFunctions from '/src/script.js';
+         const { city, pauseButton, getRandomTrackIndex, playNextTrack, playCurrentTrack, pauseAllTracks, updateUI, setVolume } = myFunctions;
+       </script>
+      <script type="module" src="/src/matriz.js"></script>
+   </head>
+   <body>
+      <a href="songs.html" id="link-imagem">
+         <img src="images/city.gif" alt="City" title="Clique para acessar a lista de músicas!">
+      </a>
+
+      <div class="button-container-div">
+         <button type="button" id="button">Listen!</button>
+      </div>
+      <span id="name"></span>
+      <div id="rightbox">
+        <button type="button" id="volumeMinus" title="Diminuir volume">-</button>
+        <button type="button" id="volumePlus" title="Aumentar volume">+</button>
+        <button type="button" id="pause" title="Pausar música">Pause</button></div>
+   </body>
+</html>
